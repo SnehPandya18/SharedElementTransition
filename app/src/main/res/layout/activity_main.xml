@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="148dp"
@@ -15,30 +15,63 @@
         android:text="@string/app_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageViewMain"/>
 
     <ImageView
-        android:src="@drawable/lion"
-        android:id="@+id/imageView"
-        android:layout_width="100dp"
+        android:id="@+id/imageViewMain"
+        android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:layout_marginEnd="156dp"
         android:layout_marginStart="156dp"
+        android:layout_marginTop="77dp"
+        app:srcCompat="@drawable/lion"
         android:transitionName="@string/app_name"
-        android:layout_marginTop="120dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"/>
+        app:layout_constraintTop_toBottomOf="@+id/textViewMain"/>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button2Main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMain"/>
+
+    <TextView
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/textViewMain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/activity_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/button3Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="148dp"
+        android:layout_marginStart="148dp"
+        android:text="@string/picasso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2Main"/>
+
+    <Button
+        android:id="@+id/button4Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="75dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginStart="148dp"
+        android:text="@string/glide"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.0"/>
+        app:layout_constraintTop_toBottomOf="@+id/button3Main"/>
 </android.support.constraint.ConstraintLayout>

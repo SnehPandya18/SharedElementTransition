@@ -5,43 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageViewFragment"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_marginEnd="156dp"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="69dp"
-        android:src="@drawable/lion"
-        android:transitionName="@string/app_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewFragment"/>
-
     <Button
-        android:id="@+id/buttonFragment"
+        android:id="@+id/buttonPicasso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="232dp"
+        android:layout_marginBottom="219dp"
         android:layout_marginEnd="148dp"
         android:layout_marginStart="148dp"
         android:layout_marginTop="16dp"
         android:text="@string/app_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewFragment"
-        app:layout_constraintVertical_bias="0.0"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPicasso"/>
+
+    <ImageView
+        android:id="@+id/imageViewPicasso"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="77dp"
+        android:transitionName="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPicasso"/>
 
     <TextView
         android:gravity="center"
         android:textSize="20sp"
-        android:id="@+id/textViewFragment"
+        android:id="@+id/textViewPicasso"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="@string/fragment_one"
+        android:text="@string/picasso"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>

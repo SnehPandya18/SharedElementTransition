@@ -18,6 +18,10 @@
         </activity>
         <activity android:name=".SharedActivity"/>
         <activity android:name=".NewActivity"/>
+        <activity android:name=".PicassoActivity"/>
+        <activity android:name=".GlideActivity"/>
+        <activity android:name=".PicassoResultActivity"/>
+        <activity android:name=".GlideResultActivity"/>
     </application>
 
 </manifest>

@@ -6,10 +6,9 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView2Activity"
+        android:id="@+id/imageView2Picasso"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/lion"
         android:transitionName="@string/app_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -17,17 +16,17 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-        android:id="@+id/textView2Activity"
+        android:id="@+id/textView2Picasso"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="204dp"
         android:layout_marginTop="24dp"
         android:gravity="center"
-        android:text="@string/activity_two"
+        android:text="@string/picasso"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2Activity"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView2Picasso"/>
 </android.support.constraint.ConstraintLayout>

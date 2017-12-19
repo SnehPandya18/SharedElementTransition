@@ -9,14 +9,25 @@
         android:id="@+id/imageView2Fragment"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="510dp"
         android:src="@drawable/lion"
         android:transitionName="@string/app_name"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"/>
+        app:layout_constraintTop_toTopOf="parent"/>
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="204dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/fragment_two"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2Fragment"/>
 </android.support.constraint.ConstraintLayout>
