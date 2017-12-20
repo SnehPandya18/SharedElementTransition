@@ -7,5 +7,5 @@ import android.widget.ImageView;
  */
 
 public interface AnimalItemClickListener {
-    void onAnimalItemClick(AnimalItem animalItem, ImageView imageView);
+    void onAnimalItemClick(AnimalItem animalItem, ImageView imageView, String transitionName);
 }

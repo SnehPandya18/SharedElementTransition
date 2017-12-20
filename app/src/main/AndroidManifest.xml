@@ -26,6 +26,7 @@
         <activity android:name=".GlideResultActivity"/>
         <activity android:name=".RecyclerActivity"/>
         <activity android:name=".RecyclerDetailActivity"/>
+        <activity android:name=".RecyclerActivityForFragment"/>
     </application>
 
 </manifest>

@@ -7,5 +7,6 @@
     <string name="fragment_two">Fragment Two</string>
     <string name="picasso">Picasso</string>
     <string name="glide">Glide</string>
-    <string name="recyclerview">Recyclerview</string>
+    <string name="recyclerview_activity">ARecyclerview</string>
+    <string name="recyclerview_fragment">FRecyclerview</string>
 </resources>

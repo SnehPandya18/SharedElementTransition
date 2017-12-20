@@ -40,14 +40,14 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapte
 
         holder.animalImageView.setAdjustViewBounds(true);
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            holder.animalImageView.setTransitionName("animal_name_" + String.valueOf(holder.getAdapterPosition()));
+        }
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    holder.animalImageView.setTransitionName("animal_name_" + String.valueOf(holder.getAdapterPosition()));
-                }
-
-                mAnimalItemClickListener.onAnimalItemClick(animalItem, holder.animalImageView);
+                mAnimalItemClickListener.onAnimalItemClick(animalItem, holder.animalImageView, holder.animalImageView.getTransitionName());
             }
         });
     }

@@ -2,7 +2,6 @@
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -56,10 +55,8 @@
         android:id="@+id/button3Main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="148dp"
-        android:layout_marginStart="148dp"
+        android:layout_marginStart="86dp"
         android:text="@string/picasso"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2Main"/>
 
@@ -67,23 +64,34 @@
         android:id="@+id/button4Main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="148dp"
-        android:layout_marginStart="148dp"
+        android:layout_marginEnd="98dp"
         android:text="@string/glide"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3Main"/>
+        app:layout_constraintStart_toEndOf="@+id/button3Main"
+        app:layout_constraintTop_toBottomOf="@+id/button2Main"/>
 
     <Button
         android:id="@+id/button5Main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="27dp"
-        android:layout_marginEnd="136dp"
-        android:layout_marginStart="136dp"
-        android:text="@string/recyclerview"
+        android:layout_marginStart="40dp"
+        android:text="@string/recyclerview_activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4Main"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <Button
+        android:id="@+id/button6Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="75dp"
+        android:layout_marginEnd="52dp"
+        android:text="@string/recyclerview_fragment"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4Main"/>
+        app:layout_constraintStart_toEndOf="@+id/button5Main"
+        app:layout_constraintTop_toBottomOf="@+id/button4Main"
+        app:layout_constraintVertical_bias="0.0"/>
 </android.support.constraint.ConstraintLayout>
